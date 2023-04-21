@@ -4,6 +4,11 @@ Modify the line number 17  and edit the path where the model is saved
 
     cache_dir='/media/agp/d58e0f56-1cd5-45af-938c-27e43b4fc343/kandinsky/tmp', 
     
+-------------------
+python 3.10.6 has to be installed.
+you can download an install from : https://www.python.org/downloads/release/python-3106/
+
+
 
 Install steps :
 
@@ -18,11 +23,14 @@ Install steps :
 9. wget https://raw.githubusercontent.com/adrianpuiu/kandinsky/main/app.py
 10 python app.py 
 
-open and point your browser at : http://127.0.0.1:7860 
+open and point your browser at : http://127.0.0.1:7860
+
 Enjoy generating images
 
-PS : If you also want to access inpaint and image mix features you'll need to install jupyterlab module 
-
-1 .pip install jupyterlab
+-----------------------------------------------------------
+If you also want to access inpaint and image mix features you'll need to install jupyterlab module 
+-------------
+1. pip install jupyterlab
 2. jupiter-lab 
-3 open the browser and go to notebooks folder and select the one you want
+3. open the browser and go to notebooks folder and select the one you want
+-------------
