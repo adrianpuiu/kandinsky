@@ -44,43 +44,6 @@ def infer(prompt, negative,h,w,batch_size, num_steps, guidance_scale,prior_cf_sc
                            prior_cf_scale=int(prior_cf_scale),
                            prior_steps='30',)
     return images
-def image_1 (prompt, negative,h,w,batch_size, num_steps, guidance_scale,prior_cf_scale) 
-image_1 = model.generate_text2img(
-    prompt,
-    num_steps=100,
-    batch_size=1,
-    guidance_scale=4,
-    h=768,
-    w=768,
-    sampler='p_sampler', 
-    prior_cf_scale=4,
-    prior_steps="25"
-)[0]
-def image_2 (prompt, negative,h,w,batch_size, num_steps, guidance_scale,prior_cf_scale) 
-image_1 = model.generate_text2img(
-    prompt,
-    num_steps=100,
-    batch_size=1,
-    guidance_scale=4,
-    h=768,
-    w=768,
-    sampler='p_sampler', 
-    prior_cf_scale=4,
-    prior_steps="25"
-)[0]
-  
-image_mixed = model.mix_images(
-    [image_1, image_2], [0.5, 0.5], 
-    num_steps=100, 
-    batch_size=1, 
-    guidance_scale=4, 
-    h=768, 
-    w=768, 
-    sampler='p_sampler', 
-    prior_cf_scale=4, 
-    prior_steps="5",
-)[0]
-
 css = """
         .gradio-container {
             font-family: 'IBM Plex Sans', sans-serif;
