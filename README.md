@@ -1,2 +1,3 @@
 # kandinsky
-small Gradio web user interface 
+small Gradio web user interface used for generating images 
+
